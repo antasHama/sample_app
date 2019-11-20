@@ -32,6 +32,9 @@ jobs:
         GEM_HOST_API_KEY: ${{secrets.GPR_AUTH_TOKEN}}
         OWNER: username
 
+    - name: Rubocop checks
+      uses: gimenete/rubocop-action@1.0
+
     - name: Publish to RubyGems
       run: |
         mkdir -p $HOME/.gem
