@@ -22,5 +22,5 @@ jobs:
 
     - name: Rubocop Code Checks
       uses: lyttco/github-actions-rubocop@1.3
-        env:
-          GITHUB_TOKEN: ${GITHUB_TOKEN}
+      env:
+        GITHUB_TOKEN: ${GITHUB_TOKEN}
